@@ -1,0 +1,6 @@
+1) login and new admin creation functionality ---> Done
+2) forget password and login via google functionality ---> Done
+3) all semeseter card making --> Done
+4) uploading material and papers functionality --->  Done
+5) sem 1  Ui --> ready complete only vedio uploading left done by today 
+6) sem 2 --> working on progreess......
