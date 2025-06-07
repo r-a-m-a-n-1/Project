@@ -1704,6 +1704,15 @@ import Sem2_IT_HomePage from "./pages/Sem2/IT/Sem2_IT_Homepage";
 import Sem2_ITBI_HomePage from "./pages/Sem2/IT_BI/Sem2_ITBI_Homepage";
 import Sem2_ECE_HomePage from "./pages/Sem2/ECE/Sem2_ECE_Homepage";
 
+
+
+// Import Sem3 Home Page (used for Sem2 route)
+import Sem3_HomePage from "./pages/Sem2/Sem2_HomePage";
+
+// Import new Sem3 Department Home Pages
+import Sem3_IT_HomePage from "./pages/Sem3/IT/Sem3_IT_Homepage";
+import Sem3_ITBI_HomePage from "./pages/Sem3/IT_BI/Sem3_ITBI_Homepage";
+import Sem3_ECE_HomePage from "./pages/Sem3/ECE/Sem3_ECE_Homepage";
 // Import new Sem2 ECE Video, Lecture Notes and Previous Year Papers Pages
 import Sem2_ece_VedioPlaylist from "./pages/Sem2/ECE/Sem2_ece_VedioPlaylist/Sem2_ece_Vedio.jsx";
 import Sem2_ece_LectureNotes from "./pages/Sem2/ECE/Sem2_ece_LectureNotes/Sem2_ece_LectureNotes.jsx";
@@ -1718,6 +1727,24 @@ import Sem2_it_PreviousPapers from "./pages/Sem2/IT/Sem2_it_PreviousYearPapers/S
 import Sem2_itbi_VedioPlaylist from "./pages/Sem2/IT_BI/Sem2_itbi_VedioPlaylist/Sem2_itbi_Vedio.jsx";
 import Sem2_itbi_LectureNotes from "./pages/Sem2/IT_BI/Sem2_itbi_LectureNotes/Sem2_itbi_LectureNotes.jsx";
 import Sem2_itbi_PreviousPapers from "./pages/Sem2/IT_BI/Sem2_itbi_PreviousYearPapers/Sem2_itbi_PreviousPapers.jsx";
+
+
+
+// Import new Sem3 ECE Video, Lecture Notes and Previous Year Papers Pages
+import Sem3_ece_VedioPlaylist from "./pages/Sem3/ECE/Sem3_ece_VedioPlaylist/Sem3_ece_Vedio.jsx";
+import Sem3_ece_LectureNotes from "./pages/Sem3/ECE/Sem3_ece_LectureNotes/Sem3_ece_LectureNotes.jsx";
+import Sem3_ece_PreviousPapers from "./pages/Sem3/ECE/Sem3_ece_PreviousYearPapers/Sem3_ece_PreviousPapers.jsx";
+
+// Import new Sem3 IT Video, Lecture Notes and Previous Year Papers Pages
+import Sem3_it_VedioPlaylist from "./pages/Sem3/IT/Sem3_it_VedioPlaylist/Sem3_it_Vedio.jsx";
+import Sem3_it_LectureNotes from "./pages/Sem3/IT/Sem3_it_LectureNotes/Sem3_it_LectureNotes.jsx";
+import Sem3_it_PreviousPapers from "./pages/Sem3/IT/Sem3_it_PreviousYearPapers/Sem3_it_PreviousPapers.jsx";3
+// Import new Sem3 IT-BI Video, Lecture Notes and Previous Year Papers Pages
+import Sem3_itbi_VedioPlaylist from "./pages/Sem3/IT_BI/Sem3_itbi_VedioPlaylist/Sem3_itbi_Vedio.jsx";
+import Sem3_itbi_LectureNotes from "./pages/Sem3/IT_BI/Sem3_itbi_LectureNotes/Sem3_itbi_LectureNotes.jsx";
+import Sem3_itbi_PreviousPapers from "./pages/Sem3/IT_BI/Sem3_itbi_PreviousYearPapers/Sem3_itbi_PreviousPapers.jsx";
+
+
 
 // Import Sem1 Video & Subject Pages
 import Sem1_Vedio from "./pages/Sem1/Sem1_vedio_playlist/Sem1_Vedio";
@@ -2217,6 +2244,34 @@ function AppContent() {
         <Route path="/sem2/it" element={<Sem2_IT_HomePage />} />
         <Route path="/sem2/itbi" element={<Sem2_ITBI_HomePage />} />
         <Route path="/sem2/ece" element={<Sem2_ECE_HomePage />} />
+
+
+         {/* Sem3 Routes */}
+        <Route path="/sem3_home" element={<Sem3_HomePage />} />
+
+
+        {/* Sem3 Department Routes */}
+        <Route path="/sem3/it" element={<Sem3_IT_HomePage />} />
+        <Route path="/sem3/itbi" element={<Sem3_ITBI_HomePage />} />
+        <Route path="/sem3/ece" element={<Sem3_ECE_HomePage />} />
+
+
+
+
+        {/* Sem3 ECE Video, Lecture Notes and Previous Year Papers Routes */}
+        <Route path="/sem3/ece/vedioplaylist" element={<Sem3_ece_VedioPlaylist />} />
+        <Route path="/sem3/ece/lecturenotes" element={<Sem3_ece_LectureNotes />} />
+        <Route path="/sem3/ece/previouspapers" element={<Sem3_ece_PreviousPapers />} />
+
+        {/* Sem3 IT Video, Lecture Notes and Previous Year Papers Routes */}
+        <Route path="/sem3/it/vedioplaylist" element={<Sem3_it_VedioPlaylist />}/>
+        <Route path="/sem3/it/lecturenotes" element={<Sem3_it_LectureNotes />} />
+        <Route path="/sem3/it/previouspapers" element={<Sem3_it_PreviousPapers />}/>
+
+        {/* Sem3 IT-BI Video, Lecture Notes and Previous Year Papers Routes */}
+        <Route path="/sem3/itbi/vedioplaylist" element={<Sem3_itbi_VedioPlaylist />} />
+        <Route path="/sem3/itbi/lecturenotes" element={<Sem3_itbi_LectureNotes />} />
+        <Route path="/sem3/itbi/previouspapers" element={<Sem3_itbi_PreviousPapers />} />
 
 
         {/* Sem2 ECE Video, Lecture Notes and Previous Year Papers Routes */}

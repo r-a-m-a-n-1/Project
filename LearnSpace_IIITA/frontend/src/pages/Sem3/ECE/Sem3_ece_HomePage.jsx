@@ -18,7 +18,7 @@ const Sem3_ece_HomePage = () => {
       <nav className="fixed top-0 left-0 right-0 bg-gradient-to-r from-blue-500 to-purple-500 p-4 shadow-lg z-[99999]">
         <div className="max-w-screen-xl mx-auto flex items-center justify-center">
           <h1 className="text-4xl md:text-5xl font-extrabold text-white animate-pulse">
-            Sem3 ECE Study Material
+            Sem 3 ECE Study Material
           </h1>
         </div>
       </nav>
