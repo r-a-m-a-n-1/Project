@@ -18,7 +18,7 @@ const Sem3_HomePage = () => {
       <nav className="fixed top-0 left-0 right-0 bg-gradient-to-r from-gray-800 via-black to-black p-4 shadow-lg z-[99999]">
         <div className="max-w-screen-xl mx-auto flex items-center justify-center">
           <h1 className="text-4xl md:text-5xl font-extrabold text-gray-200">
-            Choose your Branch
+            Choose your Branch   
           </h1>
         </div>
       </nav>

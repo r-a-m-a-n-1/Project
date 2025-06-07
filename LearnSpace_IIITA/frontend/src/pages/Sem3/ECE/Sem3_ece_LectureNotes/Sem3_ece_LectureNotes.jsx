@@ -7,88 +7,76 @@ const Sem3_ece_LectureNotes = () => {
       <div className="pt-24 pb-8 max-w-screen-xl mx-auto px-4 flex flex-col items-center">
         <h1 className="text-4xl font-bold mb-8">Semester 3 ECE - Lecture Notes</h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-          {/* Card 1 - Engineering Physics */}
+          {/* Card 1 - Analog Electronics And Linear ICs */}
           <Link
-            to="/sem2/engineering-physics-notes"
+            to="/sem3/ece/analog-electronics-notes"
             className="cursor-pointer bg-gradient-to-br from-green-400 to-green-500 text-white shadow-xl rounded-xl w-60 h-60 flex flex-col justify-center items-center transition-all duration-300 transform hover:scale-110 hover:rotate-6 hover:shadow-2xl"
           >
-            <img
-              src="/en_py.png"
-              alt="Engineering Physics"
-              className="w-16 h-16 mb-4 animate-bounce"
-            />
-            <h2 className="text-xl font-bold text-center px-2">Engineering Physics</h2>
+            <img src="/en_py.png" alt="Analog Electronics And Linear ICs" className="w-16 h-16 mb-4 animate-bounce" />
+            <h2 className="text-xl font-bold text-center px-2">Analog Electronics And Linear ICs</h2>
           </Link>
 
-          {/* Card 2 - Fundamental Electrical & Electronics Engineering */}
+          {/* Card 2 - Biology For Engineers */}
           <Link
-            to="/sem2/fundamental-electrical-notes"
+            to="/sem3/ece/biology-engineers-notes"
             className="cursor-pointer bg-gradient-to-br from-red-400 to-red-500 text-white shadow-xl rounded-xl w-60 h-60 flex flex-col justify-center items-center transition-all duration-300 transform hover:scale-110 hover:rotate-6 hover:shadow-2xl"
           >
-            <img
-              src="/fee.png"
-              alt="Fundamental Electrical & Electronics"
-              className="w-16 h-16 mb-4 animate-bounce"
-            />
-            <h2 className="text-xl font-bold text-center px-2">
-              Fundamental Electrical &amp; Electronics Engineering
-            </h2>
+            <img src="/fee.png" alt="Biology For Engineers" className="w-16 h-16 mb-4 animate-bounce" />
+            <h2 className="text-xl font-bold text-center px-2">Biology For Engineers</h2>
           </Link>
 
-          {/* Card 3 - Linear Algebra */}
+          {/* Card 3 - Electromagnetic Field And Waves */}
           <Link
-            to="/sem2/linear-algebra-notes"
+            to="/sem3/ece/em-field-waves-notes"
             className="cursor-pointer bg-gradient-to-br from-blue-400 to-blue-500 text-white shadow-xl rounded-xl w-60 h-60 flex flex-col justify-center items-center transition-all duration-300 transform hover:scale-110 hover:rotate-6 hover:shadow-2xl"
           >
-            <img
-              src="/linear_algebra.png"
-              alt="Linear Algebra"
-              className="w-16 h-16 mb-4 animate-bounce"
-            />
-            <h2 className="text-xl font-bold text-center px-2">Linear Algebra</h2>
+            <img src="/linear_algebra.png" alt="Electromagnetic Field And Waves" className="w-16 h-16 mb-4 animate-bounce" />
+            <h2 className="text-xl font-bold text-center px-2">Electromagnetic Field And Waves</h2>
           </Link>
 
-          {/* Card 4 - Problem Solving with Programming */}
+          {/* Card 4 - Indian Economics */}
           <Link
-            to="/sem2/problem-solving-notes"
+            to="/sem3/ece/indian-economics-notes"
             className="cursor-pointer bg-gradient-to-br from-purple-400 to-purple-500 text-white shadow-xl rounded-xl w-60 h-60 flex flex-col justify-center items-center transition-all duration-300 transform hover:scale-110 hover:rotate-6 hover:shadow-2xl"
           >
-            <img
-              src="/psp.png"
-              alt="Problem Solving"
-              className="w-16 h-16 mb-4 animate-bounce"
-            />
-            <h2 className="text-xl font-bold text-center px-2">
-              Problem Solving with Programming
-            </h2>
+            <img src="/psp.png" alt="Indian Economics" className="w-16 h-16 mb-4 animate-bounce" />
+            <h2 className="text-xl font-bold text-center px-2">Indian Economics</h2>
           </Link>
 
-          {/* Card 5 - Technical Communication Skills */}
+          {/* Card 5 - MicroProcessor Interface And Programming */}
           <Link
-            to="/sem2/technical-communication-notes"
+            to="/sem3/ece/microprocessor-interface-notes"
             className="cursor-pointer bg-gradient-to-br from-orange-400 to-orange-500 text-white shadow-xl rounded-xl w-60 h-60 flex flex-col justify-center items-center transition-all duration-300 transform hover:scale-110 hover:rotate-6 hover:shadow-2xl"
           >
-            <img
-              src="/com_skill.png"
-              alt="Technical Communication"
-              className="w-16 h-16 mb-4 animate-bounce"
-            />
-            <h2 className="text-xl font-bold text-center px-2">
-              Technical Communication Skills
-            </h2>
+            <img src="/com_skill.png" alt="MicroProcessor Interface And Programming" className="w-16 h-16 mb-4 animate-bounce" />
+            <h2 className="text-xl font-bold text-center px-2">MicroProcessor Interface And Programming</h2>
           </Link>
 
-          {/* Card 6 - Professional Ethics */}
+          {/* Card 6 - Introduction To Finance */}
           <Link
-            to="/sem2/professional-ethics-notes"
+            to="/sem3/ece/finance-intro-notes"
             className="cursor-pointer bg-gradient-to-br from-yellow-400 to-yellow-500 text-white shadow-xl rounded-xl w-60 h-60 flex flex-col justify-center items-center transition-all duration-300 transform hover:scale-110 hover:rotate-6 hover:shadow-2xl"
           >
-            <img
-              src="/ethics.png"
-              alt="Professional Ethics"
-              className="w-16 h-16 mb-4 animate-bounce"
-            />
-            <h2 className="text-xl font-bold text-center px-2">Professional Ethics</h2>
+            <img src="/ethics.png" alt="Introduction To Finance" className="w-16 h-16 mb-4 animate-bounce" />
+            <h2 className="text-xl font-bold text-center px-2">Introduction To Finance</h2>
+          </Link>
+
+          {/* Card 7 - Signal And System */}
+          <Link
+            to="/sem3/ece/signal-systems-notes"
+            className="cursor-pointer bg-gradient-to-br from-cyan-400 to-cyan-500 text-white shadow-xl rounded-xl w-60 h-60 flex flex-col justify-center items-center transition-all duration-300 transform hover:scale-110 hover:rotate-6 hover:shadow-2xl"
+          >
+            <img src="/ethics.png" alt="Signal And System" className="w-16 h-16 mb-4 animate-bounce" />
+            <h2 className="text-xl font-bold text-center px-2">Signal And System</h2>
+          </Link>
+
+          {/* Card 8 - UnnatBharat Abhiyaan */}
+          <Link
+            to="/sem3/ece/unnat-bharat-notes"
+            className="cursor-pointer bg-gradient-to-br from-teal-400 to-teal-500 text-white shadow-xl rounded-xl w-60 h-60 flex flex-col justify-center items-center transition-all duration-300 transform hover:scale-110 hover:rotate-6 hover:shadow-2xl"
+          >
+            <img src="/ethics.png" alt="UnnatBharat Abhiyaan" className="w-16 h-16 mb-4 animate-bounce" />
+            <h2 className="text-xl font-bold text-center px-2">UnnatBharat Abhiyaan</h2>
           </Link>
         </div>
       </div>

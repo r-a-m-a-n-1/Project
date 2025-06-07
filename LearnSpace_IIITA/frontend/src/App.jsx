@@ -1707,12 +1707,12 @@ import Sem2_ECE_HomePage from "./pages/Sem2/ECE/Sem2_ECE_Homepage";
 
 
 // Import Sem3 Home Page (used for Sem2 route)
-import Sem3_HomePage from "./pages/Sem2/Sem2_HomePage";
+import Sem3_HomePage from "./pages/Sem3/Sem3_HomePage";
 
 // Import new Sem3 Department Home Pages
 import Sem3_IT_HomePage from "./pages/Sem3/IT/Sem3_IT_Homepage";
 import Sem3_ITBI_HomePage from "./pages/Sem3/IT_BI/Sem3_ITBI_Homepage";
-import Sem3_ECE_HomePage from "./pages/Sem3/ECE/Sem3_ECE_Homepage";
+import Sem3_ECE_HomePage from "./pages/Sem3/ECE/Sem3_ece_Homepage";
 // Import new Sem2 ECE Video, Lecture Notes and Previous Year Papers Pages
 import Sem2_ece_VedioPlaylist from "./pages/Sem2/ECE/Sem2_ece_VedioPlaylist/Sem2_ece_Vedio.jsx";
 import Sem2_ece_LectureNotes from "./pages/Sem2/ECE/Sem2_ece_LectureNotes/Sem2_ece_LectureNotes.jsx";
@@ -1738,12 +1738,75 @@ import Sem3_ece_PreviousPapers from "./pages/Sem3/ECE/Sem3_ece_PreviousYearPaper
 // Import new Sem3 IT Video, Lecture Notes and Previous Year Papers Pages
 import Sem3_it_VedioPlaylist from "./pages/Sem3/IT/Sem3_it_VedioPlaylist/Sem3_it_Vedio.jsx";
 import Sem3_it_LectureNotes from "./pages/Sem3/IT/Sem3_it_LectureNotes/Sem3_it_LectureNotes.jsx";
-import Sem3_it_PreviousPapers from "./pages/Sem3/IT/Sem3_it_PreviousYearPapers/Sem3_it_PreviousPapers.jsx";3
+import Sem3_it_PreviousPapers from "./pages/Sem3/IT/Sem3_it_PreviousYearPapers/Sem3_it_PreviousPapers.jsx"; 3
 // Import new Sem3 IT-BI Video, Lecture Notes and Previous Year Papers Pages
 import Sem3_itbi_VedioPlaylist from "./pages/Sem3/IT_BI/Sem3_itbi_VedioPlaylist/Sem3_itbi_Vedio.jsx";
 import Sem3_itbi_LectureNotes from "./pages/Sem3/IT_BI/Sem3_itbi_LectureNotes/Sem3_itbi_LectureNotes.jsx";
 import Sem3_itbi_PreviousPapers from "./pages/Sem3/IT_BI/Sem3_itbi_PreviousYearPapers/Sem3_itbi_PreviousPapers.jsx";
 
+
+// sem 3 ece paper page import
+
+import AnalogElectronicsPapers from "./pages/Sem3/ECE/Sem3_ece_PreviousYearPapers/AnalogElectronicsAndLinearICsPapers";
+import BiologyEngineersPapers from "./pages/Sem3/ECE/Sem3_ece_PreviousYearPapers/BiologyForEngineersPapers";
+import EmFieldWavesPapers from "./pages/Sem3/ECE/Sem3_ece_PreviousYearPapers/ElectromagneticFieldAndWavesPapers";
+import IndianEconomicsPapers from "./pages/Sem3/ECE/Sem3_ece_PreviousYearPapers/IndianEconomicsPapers";
+import MicroprocessorInterfacePapers from "./pages/Sem3/ECE/Sem3_ece_PreviousYearPapers/MicroprocessorInterfaceAndProgrammingPapers";
+import FinanceIntroPapers from "./pages/Sem3/ECE/Sem3_ece_PreviousYearPapers/IntroductionToFinancePapers";
+import SignalSystemsPapers from "./pages/Sem3/ECE/Sem3_ece_PreviousYearPapers/SignalAndSystemPapers";
+import UnnatBharatPapers from "./pages/Sem3/ECE/Sem3_ece_PreviousYearPapers/UnnatBharatAbhiyaanPapers";
+
+
+// sem 3 lecture pages of ece 
+
+import AnalogNotes from "./pages/Sem3/ECE/Sem3_ece_LectureNotes/AnalogElectronicsAndLinearICsLectureNotes.jsx";
+import BiologyNotes from "./pages/Sem3/ECE/Sem3_ece_LectureNotes/BiologyForEngineersLectureNotes.jsx";
+import EmFieldNotes from "./pages/Sem3/ECE/Sem3_ece_LectureNotes/ElectromagneticFieldAndWavesLectureNotes.jsx";
+import EconomicsNotes from "./pages/Sem3/ECE/Sem3_ece_LectureNotes/IndianEconomicsLectureNotes.jsx";
+import MicroprocessorNotes from "./pages/Sem3/ECE/Sem3_ece_LectureNotes/MicroProcessorInterfaceAndProgrammingLectureNotes.jsx";
+import FinanceNotes from "./pages/Sem3/ECE/Sem3_ece_LectureNotes/IndianEconomicsLectureNotes.jsx";
+import SignalNotes from "./pages/Sem3/ECE/Sem3_ece_LectureNotes/SignalAndSystemsLectureNotes.jsx";
+import UnnatBharatNotes from "./pages/Sem3/ECE/Sem3_ece_LectureNotes/UnnatBharatAbhiyaanLectureNotes.jsx";
+
+// sem 3 video routing 
+import AnalogElectronicsVideos from "./pages/Sem3/ECE/Sem3_ece_VedioPlaylist/AnalogElectronicsAndLinearICsVideo";
+import BiologyEngineersVideos from "./pages/Sem3/ECE/Sem3_ece_VedioPlaylist/BiologyForEngineersVideo";
+import EmFieldWavesVideos from "./pages/Sem3/ECE/Sem3_ece_VedioPlaylist/ElectromagneticFieldAndWavesVideo";
+import IndianEconomicsVideos from "./pages/Sem3/ECE/Sem3_ece_VedioPlaylist/IndianEconomicsVideo";
+import MicroprocessorInterfaceVideos from "./pages/Sem3/ECE/Sem3_ece_VedioPlaylist/MicroprocessorInterfaceAndProgrammingVideo";
+import FinanceIntroVideos from "./pages/Sem3/ECE/Sem3_ece_VedioPlaylist/IntroductionToFinanceVideo";
+import SignalSystemsVideos from "./pages/Sem3/ECE/Sem3_ece_VedioPlaylist/SignalAndSystemsVideo";
+import UnnatBharatVideos from "./pages/Sem3/ECE/Sem3_ece_VedioPlaylist/UnnatBharatAbhiyaanVideo";
+
+
+// sem 3 it lecture pages import
+import IndianEconomicsNotes from "./pages/Sem3/IT/Sem3_it_LectureNotes/IndianEconomicsLectureNotes";
+import IntroductionFinanceNotes from "./pages/Sem3/IT/Sem3_it_LectureNotes/IntroductionToFinanceLectureNotes";
+import OOPMNotes from "./pages/Sem3/IT/Sem3_it_LectureNotes/ObjectOrientedMethodologiesLectureNotes";
+import OperatingSystemNotes from "./pages/Sem3/IT/Sem3_it_LectureNotes/OperatingSystemLectureNotes";
+import SoftwareEngineeringNotes from "./pages/Sem3/IT/Sem3_it_LectureNotes/SoftwareEngineeringLectureNotes";
+import TheoryComputationNotes from "./pages/Sem3/IT/Sem3_it_LectureNotes/TheoryOfComputationLectureNotes";
+import YogaNotes from "./pages/Sem3/IT/Sem3_it_LectureNotes/YogaLectureNotes";
+
+
+
+// sem 3 it papers pages import
+import IntroductionFinancePapers from "./pages/Sem3/IT/Sem3_it_PreviousYearPapers/IntroductionToFinancePapers";
+import OOPMPapers from "./pages/Sem3/IT/Sem3_it_PreviousYearPapers/ObjectOrientedMethodologiesPapers";
+import OperatingSystemPapers from "./pages/Sem3/IT/Sem3_it_PreviousYearPapers/OperatingSystemPapers";
+import SoftwareEngineeringPapers from "./pages/Sem3/IT/Sem3_it_PreviousYearPapers/SoftwareEngineeringPapers";
+import TheoryComputationPapers from "./pages/Sem3/IT/Sem3_it_PreviousYearPapers/TheoryOfComputationPapers";
+import YogaPapers from "./pages/Sem3/IT/Sem3_it_PreviousYearPapers/YogaPapers";
+
+// sem 3 it video pages import
+
+import IntroductionFinanceVideos from "./pages/Sem3/IT/Sem3_it_VedioPlaylist/IntroductionToFinanceVideo";
+import OOPMVideos from "./pages/Sem3/IT/Sem3_it_VedioPlaylist/ObjectOrientedMethodologiesVideo";
+import OperatingSystemVideos from "./pages/Sem3/IT/Sem3_it_VedioPlaylist/OperatingSystemVideo";
+import ProbabilityStatisticsVideos from "./pages/Sem3/IT/Sem3_it_VedioPlaylist/ProbabilityAndStatisticsVideo";
+import SoftwareEngineeringVideos from "./pages/Sem3/IT/Sem3_it_VedioPlaylist/SoftwareEngineeringVideo";
+import TheoryComputationVideos from "./pages/Sem3/IT/Sem3_it_VedioPlaylist/TheoryOfComputationVideo";
+import YogaVideos from "./pages/Sem3/IT/Sem3_it_VedioPlaylist/YogaVideo";
 
 
 // Import Sem1 Video & Subject Pages
@@ -1778,6 +1841,25 @@ import ElectronicsMeasurementsAndInstruementationPaper from "./pages/Sem2/ECE/Se
 import ProbabilityStatisticsPaper from "./pages/Sem2/ECE/Sem2_ece_PreviousYearPapers/ProbabilityAndStatisticsPapers";
 import PhysicalEducationPaper from "./pages/Sem2/ECE/Sem2_ece_PreviousYearPapers/PhysicalEducationPapers";
 import PrinciplesManagementPaper from "./pages/Sem2/ECE/Sem2_ece_PreviousYearPapers/PrinciplesOfManagementPapers";
+
+
+// sem 3 it bi lecture pages import
+
+import FoundationFintechNotes from "./pages/Sem3/IT_BI/Sem3_itbi_LectureNotes/FoundationsOfFintechLectureNotes";
+import PrayasNotes from "./pages/Sem3/IT_BI/Sem3_itbi_LectureNotes/PrayasLectureNotes";
+
+// sem 3 it bi previous year papers pages routing 
+
+import FoundationFintechPapers from "./pages/Sem3/IT_BI/Sem3_itbi_PreviousYearPapers/FoundationsOfFintechPapers";
+import PrayasPapers from "./pages/Sem3/IT_BI/Sem3_itbi_PreviousYearPapers/PrayasPapers";
+
+// sem 3 it bi video pages import
+
+import FoundationFintechVideos from "./pages/Sem3/IT_BI/Sem3_itbi_VedioPlaylist/FoundationsOfFintechVideo";
+import PrayasVideos from "./pages/Sem3/IT_BI/Sem3_itbi_VedioPlaylist/PrayasVideo";
+
+
+
 
 
 // sem 2 ece  lecture notes pages import 
@@ -1815,7 +1897,6 @@ import WebDevelopmentNotes from "./pages/Sem2/IT/Sem2_it_LectureNotes/WebDevelop
 // sem 2 it previous year papers pages import
 
 
-
 import ComputerOrganizationPaper from "./pages/Sem2/IT/Sem2_it_PreviousYearPapers/ComputerOrganizationAndArchitecturePapers";
 import DataStructuresAlgorithmsPaper from "./pages/Sem2/IT/Sem2_it_PreviousYearPapers/DataStructuresAndAlgorithmsPapers";
 import DiscreteMathPaper from "./pages/Sem2/IT/Sem2_it_PreviousYearPapers/DiscreteMathematicalStructuresPapers";
@@ -1838,7 +1919,7 @@ import ProfessionalEthicsPaper from "./pages/Sem2/IT_BI/Sem2_itbi_PreviousYearPa
 
 // sem 2 it bi video pages import 
 import EssentialOfBusinessInformaticsVideo from "./pages/Sem2/IT_BI/Sem2_itbi_VedioPlaylist/EssentialsOfBusinessInformaticsVideo.jsx"
-import ProfessionalEthicsVideo  from "./pages/Sem2/IT_BI/Sem2_itbi_VedioPlaylist/ProfessionalEthicsVideo.jsx"
+import ProfessionalEthicsVideo from "./pages/Sem2/IT_BI/Sem2_itbi_VedioPlaylist/ProfessionalEthicsVideo.jsx"
 // Lecture notes imports (restored)
 import EngineeringPhysicsLectureNotes from "./pages/Sem1/Sem1_LecturePlaylist/EngineeringPhysicsLectureNotes";
 import FundamentalElectricalLectureNotes from "./pages/Sem1/Sem1_LecturePlaylist/FundamentalElectricalLectureNotes";
@@ -1913,35 +1994,62 @@ function AppContent() {
         <Route path="/study-material" element={<Sem1_LectureNotes />} />
         <Route path="/previous-year-paper" element={<Sem1_PreviousYearPaper />} />
 
-         {/* vedio page of sem 2 ece  */}
+        {/* vedio page of sem 2 ece  */}
         <Route path="/sem2" element={<Sem2_ece_VedioPlaylist />} />
 
         {/*  sem 2 ece  video  Routes */}
-        <Route path="/sem2/data-structures" element={<DataStructures/>} />
-        <Route path="/sem2/digital-electronics" element={<DigitalElectronics/>} />
+        <Route path="/sem2/data-structures" element={<DataStructures />} />
+        <Route path="/sem2/digital-electronics" element={<DigitalElectronics />} />
         <Route path="/sem2/edi" element={<EDI />} />
-        <Route path="/sem2/electronic-workshop" element={<ElectronicWorkshop/>} />
+        <Route path="/sem2/electronic-workshop" element={<ElectronicWorkshop />} />
         <Route path="/sem2/edc" element={<EDC />} />
-        <Route path="/sem2/probability-statistics" element={<ProbabilityStatistics/>} />
-        <Route path="/sem2/physical-education" element={<PhysicalEducation/>} />
-        <Route path="/sem2/essential-of-business-informatic" element={< EssentialOfBusinessInformaticsVideo/>} />
+        <Route path="/sem2/probability-statistics" element={<ProbabilityStatistics />} />
+        <Route path="/sem2/physical-education" element={<PhysicalEducation />} />
+        <Route path="/sem2/essential-of-business-informatic" element={< EssentialOfBusinessInformaticsVideo />} />
 
+        {/* sem 3 ece video routing */}
+        <Route path="/sem3/ece/analog-electronics-videos" element={<AnalogElectronicsVideos />} />
+        <Route path="/sem3/ece/biology-engineers-videos" element={<BiologyEngineersVideos />} />
+        <Route path="/sem3/ece/em-field-waves-videos" element={<EmFieldWavesVideos />} />
+        <Route path="/sem3/ece/indian-economics-videos" element={<IndianEconomicsVideos />} />
+        <Route path="/sem3/ece/microprocessor-interface-videos" element={<MicroprocessorInterfaceVideos />} />
+        <Route path="/sem3/ece/finance-intro-videos" element={<FinanceIntroVideos />} />
+        <Route path="/sem3/ece/signal-systems-videos" element={<SignalSystemsVideos />} />
+        <Route path="/sem3/ece/unnat-bharat-videos" element={< UnnatBharatVideos />} />
 
-        
         {/*  sem 2 it  video  Routes */}
-        <Route path="/sem2/data-structures-and-algorithms" element={<DataStructures/>} />
-        <Route path="/sem2/computer-organization-architecture" element={<ComputerOrganization  />} />
+        <Route path="/sem2/data-structures-and-algorithms" element={<DataStructures />} />
+        <Route path="/sem2/computer-organization-architecture" element={<ComputerOrganization />} />
         <Route path="/sem2/discrete-mathematical-structures" element={<DiscreteMath />} />
-        <Route path="/sem2/principles-of-data-communication" element={<DataCommunication  />} />
-        <Route path="/sem2/web-development" element={<WebDevelopment/>} />
+        <Route path="/sem2/principles-of-data-communication" element={<DataCommunication />} />
+        <Route path="/sem2/web-development" element={<WebDevelopment />} />
         <Route path="/sem2/physical-education" element={<PhysicalEducation />} />
         <Route path="/sem2/principles-of-management" element={<PrinciplesManagement />} />
         <Route path="/sem2/essential-of-business-informatic" element={<EssentialOfBusinessInformaticsVideo />} />
-        <Route path="/sem2/professional-ethics" element={< ProfessionalEthicsVideo/>} />
+        <Route path="/sem2/professional-ethics" element={< ProfessionalEthicsVideo />} />
 
-         
 
-        
+        {/*  sem 3 it  video  Routes */}
+        <Route path="/sem3/it/introduction-finance-videos" element={<IntroductionFinanceVideos />} />
+        <Route path="/sem3/it/oopm-videos" element={<OOPMVideos />} />
+        <Route path="/sem3/it/operating-system-videos" element={<OperatingSystemVideos />} />
+        <Route path="/sem3/it/probability-statistics-videos" element={<ProbabilityStatisticsVideos />} />
+        <Route path="/sem3/it/software-engineering-videos" element={<SoftwareEngineeringVideos />} />
+        <Route path="/sem3/it/theory-computation-videos" element={<TheoryComputationVideos />} />
+        <Route path="/sem3/it/indian-economics-videos" element={<IndianEconomicsVideos />} />
+        <Route path="/sem3/it/yoga-videos" element={<YogaVideos />} />
+
+        {/* sem 3 it bi video routing */}
+
+        <Route path="/sem3/itbi/introduction-finance-videos" element={<IntroductionFinanceVideos />} />
+        <Route path="/sem3/itbi/oopm-videos" element={<OOPMVideos />} />
+        <Route path="/sem3/itbi/operating-system-videos" element={<OperatingSystemVideos />} />
+        <Route path="/sem3/itbi/probability-statistics-videos" element={<ProbabilityStatisticsVideos />} />
+        <Route path="/sem3/itbi/software-engineering-videos" element={<SoftwareEngineeringVideos />} />
+        <Route path="/sem3/itbi/foundation-fintech-videos" element={<FoundationFintechVideos />} />
+        <Route path="/sem3/itbi/indian-economics-videos" element={<IndianEconomicsVideos />} />
+        <Route path="/sem3/itbi/prayas-videos" element={<PrayasVideos />} />
+
         {/* Semester 2 ECe page of lecture notes routing  */}
         <Route
           path="/sem2/data-structures-algorithms-notes"
@@ -2009,7 +2117,7 @@ function AppContent() {
         />
 
 
-      
+
         {/* sem 2 it lecture notes routing  */}
 
         <Route
@@ -2021,15 +2129,15 @@ function AppContent() {
           }
         />
 
-         <Route
+        <Route
           path="/sem2/professional-ethics-notes"
           element={
             <div className="w-screen bg-black min-h-screen">
-              <ProfessionalEthicsLectureNotes/>
+              <ProfessionalEthicsLectureNotes />
             </div>
           }
         />
-         <Route
+        <Route
           path="/sem2/computer-organization-notes"
           element={
             <div className="w-screen bg-black min-h-screen">
@@ -2077,21 +2185,248 @@ function AppContent() {
             </div>
           }
         />
-      
-       
+
+
         <Route
           path="/sem2/web-development-notes"
           element={
             <div className="w-screen bg-black min-h-screen">
-              <WebDevelopmentNotes  />
+              <WebDevelopmentNotes />
             </div>
           }
         />
 
 
+
+        {/* sem 3 it lecture notes routing  */}
+
+        <Route
+          path="/sem3/it/indian-economics-notes"
+          element={
+            <div className="w-screen bg-black min-h-screen">
+              <IndianEconomicsNotes />
+            </div>
+          }
+        />
+
+        <Route
+          path="/sem3/it/introduction-finance-notes"
+          element={
+            <div className="w-screen bg-black min-h-screen">
+              <IntroductionFinanceNotes />
+            </div>
+          }
+        />
+        <Route
+          path="/sem3/it/oopm-notes"
+          element={
+            <div className="w-screen bg-black min-h-screen">
+              <OOPMNotes />
+            </div>
+          }
+        />
+        <Route
+          path="/sem3/it/operating-system-notes"
+          element={
+            <div className="w-screen bg-black min-h-screen">
+              <OperatingSystemNotes />
+            </div>
+          }
+        />
+        <Route
+          path="/sem3/it/software-engineering-notes"
+          element={
+            <div className="w-screen bg-black min-h-screen">
+              <SoftwareEngineeringNotes />
+            </div>
+          }
+        />
+        <Route
+          path="/sem3/it/theory-computation-notes"
+          element={
+            <div className="w-screen bg-black min-h-screen">
+              <TheoryComputationNotes />
+            </div>
+          }
+        />
+        <Route
+          path="/sem3/it/yoga-notes"
+          element={
+            <div className="w-screen bg-black min-h-screen">
+              <YogaNotes />
+            </div>
+          }
+        />
+        <Route
+          path="/sem3/it/probability-statistics-notes"
+          element={
+            <div className="w-screen bg-black min-h-screen">
+              <ProbabilityStatisticsNotes />
+            </div>
+          }
+        />
+
+
+
+        {/* sem 3 it bi lecture notes routing  */}
+
+        <Route
+          path="/sem3/itbi/indian-economics-notes"
+          element={
+            <div className="w-screen bg-black min-h-screen">
+              <IndianEconomicsNotes />
+            </div>
+          }
+        />
+
+        <Route
+          path="/sem3/itbi/introduction-finance-notes"
+          element={
+            <div className="w-screen bg-black min-h-screen">
+              <IntroductionFinanceNotes />
+            </div>
+          }
+        />
+        <Route
+          path="/sem3/itbi/oopm-notes"
+          element={
+            <div className="w-screen bg-black min-h-screen">
+              <OOPMNotes />
+            </div>
+          }
+        />
+        <Route
+          path="/sem3/itbi/operating-system-notes"
+          element={
+            <div className="w-screen bg-black min-h-screen">
+              <OperatingSystemNotes />
+            </div>
+          }
+        />
+        <Route
+          path="/sem3/itbi/software-engineering-notes"
+          element={
+            <div className="w-screen bg-black min-h-screen">
+              <SoftwareEngineeringNotes />
+            </div>
+          }
+        />
+        <Route
+          path="/sem3/itbi/foundation-fintech-notes"
+          element={
+            <div className="w-screen bg-black min-h-screen">
+              <FoundationFintechNotes />
+            </div>
+          }
+        />
+        <Route
+          path="/sem3/itbi/prayas-notes"
+          element={
+            <div className="w-screen bg-black min-h-screen">
+              <PrayasNotes />
+            </div>
+          }
+        />
+        <Route
+          path="/sem3/itbi/probability-statistics-notes"
+          element={
+            <div className="w-screen bg-black min-h-screen">
+              <ProbabilityStatisticsNotes />
+            </div>
+          }
+        />
+
+
+
+
+
+
+
+
+
+
+        <Route
+          path="/sem2/web-development-notes"
+          element={
+            <div className="w-screen bg-black min-h-screen">
+              <WebDevelopmentNotes />
+            </div>
+          }
+        />
+
+
+
+        {/* Semester 3  ECE page of lecture notes routing  */}
+        <Route
+          path="/sem3/ece/analog-electronics-notes"
+          element={
+            <div className="w-screen bg-black min-h-screen">
+              <AnalogNotes />
+            </div>
+          }
+        />
+        <Route
+          path="/sem3/ece/biology-engineers-notes"
+          element={
+            <div className="w-screen bg-black min-h-screen">
+              <BiologyNotes />
+            </div>
+          }
+        />
+        <Route
+          path="/sem3/ece/em-field-waves-notes"
+          element={
+            <div className="w-screen bg-black min-h-screen">
+              <EmFieldNotes />
+            </div>
+          }
+        />
+        <Route
+          path="/sem3/ece/indian-economics-notes"
+          element={
+            <div className="w-screen bg-black min-h-screen">
+              <EconomicsNotes />
+            </div>
+          }
+        />
+        <Route
+          path="/sem3/ece/microprocessor-interface-notes"
+          element={
+            <div className="w-screen bg-black min-h-screen">
+              < MicroprocessorNotes />
+            </div>
+          }
+        />
+        <Route
+          path="/sem3/ece/finance-intro-notes"
+          element={
+            <div className="w-screen bg-black min-h-screen">
+              <FinanceNotes />
+            </div>
+          }
+        />
+        <Route
+          path="/sem3/ece/signal-systems-notes"
+          element={
+            <div className="w-screen bg-black min-h-screen">
+              <SignalNotes />
+            </div>
+          }
+        />
+        <Route
+          path="/sem3/ece/unnat-bharat-notes"
+          element={
+            <div className="w-screen bg-black min-h-screen">
+              <UnnatBharatNotes />
+            </div>
+          }
+        />
+
+
+
         {/* Semester 2 ECE Main Page */}
         <Route path="/sem2" element={<Sem2_ece_PreviousYearPapers />} />
-        {/* sem 2 ece  routing  */}
+        {/* sem 2 ece papers  routing  */}
         <Route
           path="/sem2/data-structures-paper"
           element={
@@ -2159,7 +2494,7 @@ function AppContent() {
 
         {/* sem 2 it papers routing */}
 
-       
+
         <Route
           path="/sem2/essential-of-business-informatics-paper"
           element={
@@ -2216,7 +2551,7 @@ function AppContent() {
             </div>
           }
         />
-       
+
         <Route
           path="/sem2/physical-education-paper"
           element={
@@ -2234,6 +2569,214 @@ function AppContent() {
           }
         />
 
+        {/* sem 3 it papers routing */}
+
+
+        <Route
+          path="/sem3/it/introduction-finance-papers"
+          element={
+            <div className="w-screen bg-black min-h-screen">
+              <IntroductionFinancePapers />
+            </div>
+          }
+        />
+        <Route
+          path="/sem3/it/oopm-papers"
+          element={
+            <div className="w-screen bg-black min-h-screen">
+              <OOPMPapers />
+            </div>
+          }
+        />
+        <Route
+          path="/sem3/it/operating-system-papers"
+          element={
+            <div className="w-screen bg-black min-h-screen">
+              <OperatingSystemPapers />
+            </div>
+          }
+        />
+        <Route
+          path="/sem3/it/software-engineering-papers"
+          element={
+            <div className="w-screen bg-black min-h-screen">
+              <SoftwareEngineeringPapers />
+            </div>
+          }
+        />
+        <Route
+          path="/sem3/it/theory-computation-papers"
+          element={
+            <div className="w-screen bg-black min-h-screen">
+              <TheoryComputationPapers />
+            </div>
+          }
+        />
+        <Route
+          path="/sem3/it/yoga-papers"
+          element={
+            <div className="w-screen bg-black min-h-screen">
+              <YogaPapers />
+            </div>
+          }
+        />
+        <Route
+          path="/sem3/it/probability-statistics-papers"
+          element={
+            <div className="w-screen bg-black min-h-screen">
+              <ProbabilityStatisticsPaper />
+            </div>
+          }
+        />
+
+        <Route
+          path="/sem3/it/indian-economics-papers"
+          element={
+            <div className="w-screen bg-black min-h-screen">
+              <IndianEconomicsPapers />
+            </div>
+          }
+        />
+
+
+
+
+        {/* sem 3 it bi papers routing */}
+
+
+        <Route
+          path="/sem3/itbi/introduction-finance-papers"
+          element={
+            <div className="w-screen bg-black min-h-screen">
+              <IntroductionFinancePapers />
+            </div>
+          }
+        />
+        <Route
+          path="/sem3/itbi/oopm-papers"
+          element={
+            <div className="w-screen bg-black min-h-screen">
+              <OOPMPapers />
+            </div>
+          }
+        />
+        <Route
+          path="/sem3/itbi/operating-system-papers"
+          element={
+            <div className="w-screen bg-black min-h-screen">
+              <OperatingSystemPapers />
+            </div>
+          }
+        />
+        <Route
+          path="/sem3/itbi/software-engineering-papers"
+          element={
+            <div className="w-screen bg-black min-h-screen">
+              <SoftwareEngineeringPapers />
+            </div>
+          }
+        />
+        <Route
+          path="/sem3/itbi/foundation-fintech-papers"
+          element={
+            <div className="w-screen bg-black min-h-screen">
+              <FoundationFintechPapers />
+            </div>
+          }
+        />
+        <Route
+          path="/sem3/itbi/prayas-papers"
+          element={
+            <div className="w-screen bg-black min-h-screen">
+              <PrayasPapers />
+            </div>
+          }
+        />
+        <Route
+          path="/sem3/itbi/probability-statistics-papers"
+          element={
+            <div className="w-screen bg-black min-h-screen">
+              <ProbabilityStatisticsPaper />
+            </div>
+          }
+        />
+
+        <Route
+          path="/sem3/itbi/indian-economics-papers"
+          element={
+            <div className="w-screen bg-black min-h-screen">
+              <IndianEconomicsPapers />
+            </div>
+          }
+        />
+
+
+        {/* sem 3 ece papers  routing  */}
+        <Route
+          path="/sem3/ece/analog-electronics-papers"
+          element={
+            <div className="w-screen bg-black min-h-screen">
+              <AnalogElectronicsPapers />
+            </div>
+          }
+        />
+        <Route
+          path="/sem3/ece/biology-engineers-papers"
+          element={
+            <div className="w-screen bg-black min-h-screen">
+              <BiologyEngineersPapers />
+            </div>
+          }
+        />
+        <Route
+          path="/sem3/ece/em-field-waves-papers"
+          element={
+            <div className="w-screen bg-black min-h-screen">
+              <EmFieldWavesPapers />
+            </div>
+          }
+        />
+        <Route
+          path="/sem3/ece/indian-economics-papers"
+          element={
+            <div className="w-screen bg-black min-h-screen">
+              <IndianEconomicsPapers />
+            </div>
+          }
+        />
+        <Route
+          path="/sem3/ece/microprocessor-interface-papers"
+          element={
+            <div className="w-screen bg-black min-h-screen">
+              <MicroprocessorInterfacePapers />
+            </div>
+          }
+        />
+        <Route
+          path="/sem3/ece/finance-intro-papers"
+          element={
+            <div className="w-screen bg-black min-h-screen">
+              <FinanceIntroPapers />
+            </div>
+          }
+        />
+        <Route
+          path="/sem3/ece/signal-systems-papers"
+          element={
+            <div className="w-screen bg-black min-h-screen">
+              <SignalSystemsPapers />
+            </div>
+          }
+        />
+        <Route
+          path="/sem3/ece/unnat-bharat-papers"
+          element={
+            <div className="w-screen bg-black min-h-screen">
+              <UnnatBharatPapers />
+            </div>
+          }
+        />
+
 
 
         {/* Sem2 Routes */}
@@ -2246,7 +2789,7 @@ function AppContent() {
         <Route path="/sem2/ece" element={<Sem2_ECE_HomePage />} />
 
 
-         {/* Sem3 Routes */}
+        {/* Sem3 Routes */}
         <Route path="/sem3_home" element={<Sem3_HomePage />} />
 
 
@@ -2264,9 +2807,9 @@ function AppContent() {
         <Route path="/sem3/ece/previouspapers" element={<Sem3_ece_PreviousPapers />} />
 
         {/* Sem3 IT Video, Lecture Notes and Previous Year Papers Routes */}
-        <Route path="/sem3/it/vedioplaylist" element={<Sem3_it_VedioPlaylist />}/>
+        <Route path="/sem3/it/vedioplaylist" element={<Sem3_it_VedioPlaylist />} />
         <Route path="/sem3/it/lecturenotes" element={<Sem3_it_LectureNotes />} />
-        <Route path="/sem3/it/previouspapers" element={<Sem3_it_PreviousPapers />}/>
+        <Route path="/sem3/it/previouspapers" element={<Sem3_it_PreviousPapers />} />
 
         {/* Sem3 IT-BI Video, Lecture Notes and Previous Year Papers Routes */}
         <Route path="/sem3/itbi/vedioplaylist" element={<Sem3_itbi_VedioPlaylist />} />
@@ -2387,7 +2930,7 @@ function AppContent() {
             </div>
           }
         />
-          <Route path="/techtitanium-team" element={<TechTitaniumTeam />} />
+        <Route path="/techtitanium-team" element={<TechTitaniumTeam />} />
 
         {/* Auth */}
         <Route path="/admin/login" element={<AdminLoginPage />} />

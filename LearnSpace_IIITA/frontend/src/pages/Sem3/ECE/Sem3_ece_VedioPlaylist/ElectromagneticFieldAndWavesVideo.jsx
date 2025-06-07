@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import YouTube from "react-youtube";
 
-const AElectromagneticFieldAndWavesVideoPage = () => {
+const ElectromagneticFieldAndWavesVideoPage = () => {
   const videoIDs = [
     "_6oRqxY6O5w", "yzuoyA2EJPA", "5LCO26C-ggo", "QZi8OqYSLgU", "kSyYgXvBpQQ",
     "9WjuLvPT_2A", "pG-IAFOiOw4", "itCTFw0d4hs", "iF7ya80h1Rs", "wGiJkeuJDcM",

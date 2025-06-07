@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { db } from "../../../../firebase";
 import { collection, getDocs, query, where } from "firebase/firestore";
 
-const ASignalAndSystemsLectureNotes = () => {
+const SignalAndSystemsLectureNotes = () => {
   const [notes, setNotes] = useState({});
   const [loading, setLoading] = useState(true);
 
@@ -58,7 +58,7 @@ const ASignalAndSystemsLectureNotes = () => {
   useEffect(() => {
     const fetchNotes = async () => {
       try {
-        const semester = "Semester 2";
+        const semester = "Semester 3";
         const subject = "Signal And Systems";
 
         const yearsRef = collection(db, "semesters", semester, "years");

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { db } from "../../../../firebase";
 import { collection, getDocs, query, where } from "firebase/firestore";
 
-const  IntroductionToFinanacePapersPage
+const  PrayasPapersPage = () => {
   const [papers, setPapers] = useState({});
   const [loading, setLoading] = useState(true);
 
@@ -66,7 +66,7 @@ const  IntroductionToFinanacePapersPage
     const fetchPapers = async () => {
       try {
         const semester = "Semester 3";
-        const subject = "Introduction To Finanace"
+        const subject = "Prayas";
 
         const yearsRef = collection(db, "semesters", semester, "years");
         const yearsSnapshot = await getDocs(yearsRef);
@@ -127,7 +127,7 @@ const  IntroductionToFinanacePapersPage
     <div className="bg-gradient-to-br from-gray-900 via-black to-gray-900 text-white min-h-screen">
       <div className="sticky top-0 z-50 w-full bg-black bg-opacity-90 backdrop-blur-sm py-4">
         <h1 className="text-3xl font-bold text-center">
-          Introduction To Finanace Papers Page
+          Prayas Papers
         </h1>
       </div>
 
@@ -186,4 +186,4 @@ const  IntroductionToFinanacePapersPage
   );
 };
 
-export default IntroductionToFinanacePapersPage
+export default PrayasPapersPage;

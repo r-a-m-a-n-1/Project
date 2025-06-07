@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import YouTube from "react-youtube";
 
-const ComputerOrganizationAndArchitectureVideoPage = () => {
+const FoundationsOfFintechVideoPage = () => {
   const videoIDs = [
     "_6oRqxY6O5w", "yzuoyA2EJPA", "5LCO26C-ggo", "QZi8OqYSLgU", "kSyYgXvBpQQ",
     "9WjuLvPT_2A", "pG-IAFOiOw4", "itCTFw0d4hs", "iF7ya80h1Rs", "wGiJkeuJDcM",
@@ -66,7 +66,7 @@ const ComputerOrganizationAndArchitectureVideoPage = () => {
   return (
     <div className="bg-black text-white w-full min-h-screen p-8">
       <h1 className="text-4xl font-bold text-center mb-8">
-       Computer Organization And Architecture Video 
+       Foundations Of Fintech Videos
       </h1>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
@@ -110,4 +110,4 @@ const ComputerOrganizationAndArchitectureVideoPage = () => {
   );
 };
 
-export default ComputerOrganizationAndArchitectureVideoPage;
+export default FoundationsOfFintechVideoPage;

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { db } from "../../../../firebase";
 import { collection, getDocs, query, where } from "firebase/firestore";
 
-const DataStructureAndAlgorithmsLectureNotes = () => {
+const FoundationOfFintechLectureNotes = () => {
   const [notes, setNotes] = useState({});
   const [loading, setLoading] = useState(true);
 
@@ -58,8 +58,8 @@ const DataStructureAndAlgorithmsLectureNotes = () => {
   useEffect(() => {
     const fetchNotes = async () => {
       try {
-        const semester = "Semester 2";
-        const subject = "Data Structures and Algorithms";
+        const semester = "Semester 3";
+        const subject = "Foundation Of Fintech";
 
         const yearsRef = collection(db, "semesters", semester, "years");
         const yearsSnapshot = await getDocs(yearsRef);
@@ -122,7 +122,7 @@ const DataStructureAndAlgorithmsLectureNotes = () => {
     <div className="bg-gradient-to-br from-gray-900 via-black to-gray-900 text-white min-h-screen">
       <div className="sticky top-0 z-50 w-full bg-black bg-opacity-90 backdrop-blur-sm py-4">
         <h1 className="text-3xl font-bold text-center">
-          Data Structure and Algorithm Lecture Notes
+          Foundation Of Fintech Lecture Notes
         </h1>
       </div>
 
@@ -181,4 +181,4 @@ const DataStructureAndAlgorithmsLectureNotes = () => {
   );
 };
 
-export default DataStructureAndAlgorithmsLectureNotes;
+export default FoundationOfFintechLectureNotes;
