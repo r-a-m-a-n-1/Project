@@ -59,7 +59,7 @@ const CMOS_VLSI_DesignLectureNotes = () => {
     const fetchNotes = async () => {
       try {
         const semester = "Semester 4";
-        const subject = "CMOS_VLSI Design";
+        const subject = "CMOS_VLSI_Design";
 
         const yearsRef = collection(db, "semesters", semester, "years");
         const yearsSnapshot = await getDocs(yearsRef);

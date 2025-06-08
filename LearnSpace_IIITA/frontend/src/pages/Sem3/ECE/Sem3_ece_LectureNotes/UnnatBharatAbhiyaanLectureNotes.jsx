@@ -58,8 +58,8 @@ const UnnatBharatAbhiyaanLectureNotes = () => {
   useEffect(() => {
     const fetchNotes = async () => {
       try {
-        const semester = "Semester 2";
-        const subject = "Unnat Bharat Abhiyaan";
+        const semester = "Semester 3";
+        const subject = "Unnat Bharat And Abhiyaan";
 
         const yearsRef = collection(db, "semesters", semester, "years");
         const yearsSnapshot = await getDocs(yearsRef);

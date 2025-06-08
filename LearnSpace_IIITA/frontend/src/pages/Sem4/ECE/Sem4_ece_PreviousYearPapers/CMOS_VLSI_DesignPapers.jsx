@@ -66,7 +66,7 @@ const  CMOS_VLSI_DesignPapersPage = () => {
     const fetchPapers = async () => {
       try {
         const semester = "Semester 4";
-        const subject = "CMOS_VLSI Design";
+        const subject = "CMOS_VLSI_Design";
 
         const yearsRef = collection(db, "semesters", semester, "years");
         const yearsSnapshot = await getDocs(yearsRef);

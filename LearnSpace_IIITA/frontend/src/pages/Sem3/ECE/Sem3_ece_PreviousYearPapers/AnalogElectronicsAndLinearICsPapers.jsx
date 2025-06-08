@@ -65,7 +65,7 @@ const  AnalogElectronicsAndLinearICsPapersPage = () => {
   useEffect(() => {
     const fetchPapers = async () => {
       try {
-        const semester = "Semester 2";
+        const semester = "Semester 3";
         const subject = "Analog Electronics And Linear ICs";
 
         const yearsRef = collection(db, "semesters", semester, "years");

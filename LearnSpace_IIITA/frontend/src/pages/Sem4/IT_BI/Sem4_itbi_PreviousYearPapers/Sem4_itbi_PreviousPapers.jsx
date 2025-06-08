@@ -10,7 +10,7 @@ const Sem4_itbi_PreviousPapers = () => {
 
           {/* Card 1 - Digital Marketing */}
           <Link
-            to="/sem4/itbi/computer-graphics-visualization-papers"
+            to="/sem4/itbi/digital-marketing-papers"
             className="cursor-pointer bg-gradient-to-br from-green-400 to-green-500 text-white shadow-xl rounded-xl w-60 h-60 flex flex-col justify-center items-center transition-all duration-300 transform hover:scale-110 hover:rotate-6 hover:shadow-2xl"
           >
             <img src="/en_py.png" alt="Digital Marketing" className="w-16 h-16 mb-4 animate-bounce" />
@@ -55,7 +55,7 @@ const Sem4_itbi_PreviousPapers = () => {
 
           {/* Card 6 -Operation Reasearch */}
           <Link
-            to="/sem4/itbi/principles-of-programming-papers"
+            to="/sem4/itbi/operation-research-papers"
             className="cursor-pointer bg-gradient-to-br from-yellow-400 to-yellow-500 text-white shadow-xl rounded-xl w-60 h-60 flex flex-col justify-center items-center transition-all duration-300 transform hover:scale-110 hover:rotate-6 hover:shadow-2xl"
           >
             <img src="/ethics.png" alt="Operation Reasearch" className="w-16 h-16 mb-4 animate-bounce" />

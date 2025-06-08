@@ -66,7 +66,7 @@ const  UnnatBharatPapersPage = () => {
     const fetchPapers = async () => {
       try {
         const semester = "Semester 3";
-        const subject = "Unnat Bharat";
+        const subject = "Unnat Bharat And Abhiyaan";
 
         const yearsRef = collection(db, "semesters", semester, "years");
         const yearsSnapshot = await getDocs(yearsRef);

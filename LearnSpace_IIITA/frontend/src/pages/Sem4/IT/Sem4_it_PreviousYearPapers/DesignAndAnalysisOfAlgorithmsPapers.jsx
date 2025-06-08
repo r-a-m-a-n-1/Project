@@ -66,7 +66,7 @@ const  DesignAndAnalysisOfAlgorithmsPapersPage = () => {
     const fetchPapers = async () => {
       try {
         const semester = "Semester 4";
-        const subject = "Design And Analysis Of Algorithms";
+        const subject = "Design And Analysis Of Algorithm";
 
         const yearsRef = collection(db, "semesters", semester, "years");
         const yearsSnapshot = await getDocs(yearsRef);

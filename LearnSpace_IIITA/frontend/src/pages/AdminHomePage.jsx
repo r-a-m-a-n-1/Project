@@ -23,7 +23,7 @@ const semesters = [
   { name: "Semester 8" },
 ];
 
-const branches = ["CSE", "IT", "ECE", "Other"];
+const branches = ["IT", "IT-BI", "ECE"];
 
 const semesterSubjects = {
   "Semester 1": [
@@ -34,43 +34,98 @@ const semesterSubjects = {
     "Technical Communication Skills",
     "Professional Ethics",
   ],
-  "Semester 2": [
-    "Computer Organization and Architecture",
-    "Data Structures and Algorithms",
-    "Discrete Mathematical Structures",
-    "Principles of Data Communication",
-    "Principles of Management",
-    "Web Development",
-    "Physical Education",
-  ],
-  "Semester 3": [
-    "Object Oriented Methodologies",
-    "Operating System",
-    "Probability and Statistics",
-    "Software Engineering",
-    "Theory of Computation",
-    "Introduction to Finance",
-    "Yoga",
-    "Indian Economics",
-  ],
-  "Semester 4": [
-    "Computer Graphics and Visualization",
-    "Computer Networks",
-    "Database Management System",
-    "Design and Analysis of Algorithms",
-    "Principles of Programming Language",
-    "Money and Banking",
-  ],
-  "Semester 5": [
-    "Artificial Intelligence",
-    "Cyber Security",
-    "Design Thinking and Innovation",
-    "Image and Video Processing",
-    "Introduction to Machine Learning",
-    "Project-I (Research Methodology)",
-    "Economics of Business Environment",
-  ],
+  "Semester 2": {
+    IT: [
+      "Computer Organization and Architecture",
+      "Data Structures and Algorithms",
+      "Discrete Mathematical Structures",
+      "Web Development",
+      "Physical Education",
+      "Principles Of Data Communication",
+      "Principles Of Mangement"
+    ],
+    "IT-BI": [
+      "Computer Organization and Architecture",
+      "Data Structures and Algorithms",
+      "Discrete Mathematical Structures",
+      "Essentials Of Business Informatics",
+      "Principles Of Management",
+      "Professional Ethics",
+      "Web Development"
+    ],
+    ECE: [
+      "Digital Electronics",
+      "Data Structures and Algorithms",
+      "Electronic Devices And Circuits",
+      "Electronics Measurements And Instrumentations",
+      "Electronic WorkShop",
+      "Probability And Statistics",
+      "Principles of Management",
+      "Physical Education",
+    ],
+  },
+  "Semester 3": {
+    IT: [
+      "Indian Economics",
+      "Operating System",
+      "Software Engineering",
+      "Theory of Computation",
+      "Object Oriented Methodologies",
+      "Probability And Statistics",
+      "Yoga",
+      "Introductioin To Finance"
+    ],
+    "IT-BI": [
+      "Object Oriented Methodologies",
+      "Operating System",
+      "Probability and Statistics",
+      "Indian Economics",
+      "Foundation Of Fintech",
+      "Prayas",
+      "Software Engineering",
+      "Introduction To Finance"
+    ],
+    ECE: [
+      "Analog Electronics And Linear ICs",
+      "Biology For Engineers",
+      "Electromagnetic Field And Waves",
+      "Yoga",
+      "Introduction To Finance",
+      "MicroProcessor Interface And Programming",
+      "Signal And System",
+      "Unnat Bharat And Abhiyaan"
+    ],
+  },
+  "Semester 4": {
+    IT: [
+      "Computer Graphics And Visulization",
+      "Computer Network",
+      "Database Management System",
+      "Design And Analysis Of Algorithm",
+      "Money And Banking",
+      "Principles Of Programming Language"
+    ],
+    "IT-BI": [
+      "Digital Marketing",
+      "Computer Network",
+      "Database Management System",
+      "Desing And Analysis Of Algorithm",
+      "Money And Banking",
+      "Operation Research"
+    ],
+    ECE: [
+      "Analog Communication",
+      "Antenna And Waves Propagation",
+      "CMOS_VLSI_Design",
+      "Money And Banking",
+      "Control System",
+      "Integrated Circuit Technologies",
+      "Network Synthesis And Analog Filters"
+    ],
+  }
+  // Continue adding branch-wise mapping similarly for Semesters 4–8
 };
+
 
 export default function AdminHomePage() {
   const navigate = useNavigate();
@@ -128,11 +183,11 @@ function UploadMaterialForm() {
     sem: "Semester 1",
     branch: "",
     materialType: "Previous Year Paper", // Default
-    lectureType: "", // holds the chosen lecture type
-    customType: "",  // if lectureType === "Other"
+    lectureType: "",                  // NEW: holds the chosen lecture type
+    customType: "",                   // NEW: if lectureType === "Other"
     subject: "",
     year: "",
-    paperType: "Mid Sem", // (only used if Previous Year Paper)
+    paperType: "Mid Sem",             // (only used if Previous Year Paper)
     title: "",
     file: null,
   });
@@ -141,11 +196,6 @@ function UploadMaterialForm() {
   const [uploading, setUploading] = useState(false);
   const [uploadProgress, setUploadProgress] = useState(0);
 
-  useEffect(() => {
-    setSubjects(semesterSubjects[data.sem] || []);
-    setData((prev) => ({ ...prev, subject: "" }));
-  }, [data.sem]);
-
   const handleChange = (e) => {
     const { name, value, files } = e.target;
     setData((prev) => ({
@@ -153,6 +203,20 @@ function UploadMaterialForm() {
       [name]: files ? files[0] : value,
     }));
   };
+
+  useEffect(() => {
+    const { sem, branch } = data;
+
+    if (sem === "Semester 1") {
+      setSubjects(semesterSubjects[sem] || []);
+    } else {
+      const branchSubjects = semesterSubjects[sem]?.[branch] || [];
+      setSubjects(branchSubjects);
+    }
+
+    setData((prev) => ({ ...prev, subject: "" }));
+  }, [data.sem, data.branch]);
+
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -179,7 +243,7 @@ function UploadMaterialForm() {
       return alert("Please fill in all required fields.");
     }
 
-    // If uploading Lecture Notes, ensure lectureType is chosen
+    // If uploading Lecture Notes, ensure lectureType is chosen (and customType if “Other”)
     if (isLectureNotes) {
       if (!lectureType) {
         return alert("Please select a Lecture Type.");
@@ -196,6 +260,7 @@ function UploadMaterialForm() {
         lectureType === "Other" ? customType.trim() : lectureType;
     }
 
+    // Keep existing PaperType logic
     const finalType = materialType;
 
     try {
@@ -204,9 +269,8 @@ function UploadMaterialForm() {
       const cloudinaryUrl = `https://api.cloudinary.com/v1_1/${cloudName}/raw/upload`;
 
       const formData = new FormData();
-      const uniqueFileName = `${file.name
-        .split(".")[0]
-      }_${Date.now()}.${file.name.split(".").pop()}`;
+      const uniqueFileName = `${file.name.split(".")[0]
+        }_${Date.now()}.${file.name.split(".").pop()}`;
       formData.append("file", file, uniqueFileName);
       formData.append("upload_preset", uploadPreset);
 
@@ -260,7 +324,7 @@ function UploadMaterialForm() {
           subject,
           branch: showBranch ? branch : "",
           fileURL: url,
-          lectureType: finalLectureType, // stores chosen lectureType or custom
+          lectureType: finalLectureType, // NEW! ensures Firestore has the chosen lectureType
           uploadedAt: new Date().toISOString(),
         });
 
@@ -274,8 +338,8 @@ function UploadMaterialForm() {
           year: "",
           title: "",
           file: null,
-          lectureType: "", // reset the dropdown
-          customType: "",  // reset the “Other” box
+          lectureType: "",   // reset the dropdown
+          customType: "",    // reset the “Other” box
           // materialType remains, so you can keep uploading same category
           paperType: "Mid Sem",
         }));
@@ -361,6 +425,7 @@ function UploadMaterialForm() {
           ))}
         </select>
 
+        {/* Only show this dropdown if “Previous Year Paper” is selected */}
         {isPreviousYear && (
           <select
             name="paperType"
@@ -374,6 +439,7 @@ function UploadMaterialForm() {
           </select>
         )}
 
+        {/* ===== NEW: Lecture Type dropdown if “Lecture Notes and Assignment” ===== */}
         {isLectureNotes && (
           <div className="col-span-full flex flex-col gap-2">
             <select
@@ -403,6 +469,7 @@ function UploadMaterialForm() {
             )}
           </div>
         )}
+        {/* ===== END of Lecture Type section ===== */}
 
         <input
           type="text"
@@ -438,11 +505,10 @@ function UploadMaterialForm() {
       <button
         type="submit"
         disabled={uploading}
-        className={`px-6 py-2 rounded ${
-          uploading
+        className={`px-6 py-2 rounded ${uploading
             ? "bg-gray-500 cursor-not-allowed"
             : "bg-blue-500 hover:bg-blue-600"
-        }`}
+          }`}
       >
         {uploading ? "Uploading..." : "Upload"}
       </button>

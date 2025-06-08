@@ -1928,6 +1928,95 @@ import ProblemSolvingLectureNotes from "./pages/Sem1/Sem1_LecturePlaylist/Proble
 import TechnicalCommunicationLectureNotes from "./pages/Sem1/Sem1_LecturePlaylist/TechnicalCommunicationLectureNotes";
 import ProfessionalEthicsLectureNotes from "./pages/Sem1/Sem1_LecturePlaylist/ProfessionalEthicsLectureNotes";
 
+// Import Sem4 Home Page (used for Sem4 route)
+import Sem4_HomePage from "./pages/Sem4/Sem4_HomePage";
+
+// Import new Sem3 Department Home 4
+import Sem4_IT_HomePage from "./pages/Sem4/IT/Sem4_IT_Homepage";
+import Sem4_ITBI_HomePage from "./pages/Sem4/IT_BI/Sem4_ITBI_Homepage";
+import Sem4_ECE_HomePage from "./pages/Sem4/ECE/Sem4_ece_Homepage";
+// Import new Sem4 ECE Video, Lecture Notes and Previous Year Papers Pages
+import Sem4_ece_VedioPlaylist from "./pages/Sem4/ECE/Sem4_ece_VedioPlaylist/Sem4_ece_Vedio.jsx";
+import Sem4_ece_LectureNotes from "./pages/Sem4/ECE/Sem4_ece_LectureNotes/Sem4_ece_LectureNotes.jsx";
+import Sem4_ece_PreviousPapers from "./pages/Sem4/ECE/Sem4_ece_PreviousYearPapers/Sem4_ece_PreviousPapers.jsx";
+
+// Import new Sem4 IT Video, Lecture Notes and Previous Year Papers Pages
+import Sem4_it_VedioPlaylist from "./pages/Sem4/IT/Sem4_it_VedioPlaylist/Sem4_it_Vedio.jsx";
+import Sem4_it_LectureNotes from "./pages/Sem4/IT/Sem4_it_LectureNotes/Sem4_it_LectureNotes.jsx";
+import Sem4_it_PreviousPapers from "./pages/Sem4/IT/Sem4_it_PreviousYearPapers/Sem4_it_PreviousPapers.jsx";
+
+// Import new Sem4 IT-BI Video, Lecture Notes and Previous Year Papers Pages
+import Sem4_itbi_VedioPlaylist from "./pages/Sem4/IT_BI/Sem4_itbi_VedioPlaylist/Sem4_itbi_Vedio.jsx";
+import Sem4_itbi_LectureNotes from "./pages/Sem4/IT_BI/Sem4_itbi_LectureNotes/Sem4_itbi_LectureNotes.jsx";
+import Sem4_itbi_PreviousPapers from "./pages/Sem4/IT_BI/Sem4_itbi_PreviousYearPapers/Sem4_itbi_PreviousPapers.jsx";
+
+// sem 4 ece lecture notes pages import 
+import AnalogCommunicationNotes from "./pages/Sem4/ECE/Sem4_ece_LectureNotes/AnalogCommunicationLectureNotes";
+import AntennaWavePropagationNotes from "./pages/Sem4/ECE/Sem4_ece_LectureNotes/AntennaAndWavePropagationLectureNotes";
+import CMOSVLSIDesignNotes from "./pages/Sem4/ECE/Sem4_ece_LectureNotes/CMOS_VLSI_DesignLectureNotes";
+import ControlSystemNotes from "./pages/Sem4/ECE/Sem4_ece_LectureNotes/ControlSystemLectureNotes";
+import IntegratedCircuitTechNotes from "./pages/Sem4/ECE/Sem4_ece_LectureNotes/IntegratedCircuitTechnologiesLectureNotes";
+import MoneyAndBankingNotes from "./pages/Sem4/ECE/Sem4_ece_LectureNotes/MoneyAndBankingLectureNotes";
+import NetworkSynthesisFiltersNotes from "./pages/Sem4/ECE/Sem4_ece_LectureNotes/NetworkSynthesisAndAnalogFiltersLectureNotes";
+// sem 4 ece previous year papers pages import
+import AnalogCommunicationPapers from "./pages/Sem4/ECE/Sem4_ece_PreviousYearPapers/AnalogCommunicationPapers";
+import AntennaWavePropagationPapers from "./pages/Sem4/ECE/Sem4_ece_PreviousYearPapers/AntennaAndWavePropagationPapers";
+import CMOSVLSIDesignPapers from "./pages/Sem4/ECE/Sem4_ece_PreviousYearPapers/CMOS_VLSI_DesignPapers";
+import ControlSystemPapers from "./pages/Sem4/ECE/Sem4_ece_PreviousYearPapers/ControlSystemPapers";
+import IntegratedCircuitTechPapers from "./pages/Sem4/ECE/Sem4_ece_PreviousYearPapers/IntegratedCircuitTechnologiesPapers";
+import MoneyAndBankingPapers from "./pages/Sem4/ECE/Sem4_ece_PreviousYearPapers/MoneyAndBankingPapers";
+import NetworkSynthesisFiltersPapers from "./pages/Sem4/ECE/Sem4_ece_PreviousYearPapers/NetworkSynthesisAndAnalogFiltersPapers";
+// sem 4 ece video pages import
+
+import AnalogCommunicationVideos from "./pages/Sem4/ECE/Sem4_ece_VedioPlaylist/AnalogCommunicationVideo";
+import AntennaWavePropagationVideos from "./pages/Sem4/ECE/Sem4_ece_VedioPlaylist/AntennaAndWavePropagationVideo";
+import CMOSVLSIDesignVideos from "./pages/Sem4/ECE/Sem4_ece_VedioPlaylist/CMOS_VLSI_DesignVideo";
+import ControlSystemVideos from "./pages/Sem4/ECE/Sem4_ece_VedioPlaylist/ControlSystemVideo";
+import IntegratedCircuitTechVideos from "./pages/Sem4/ECE/Sem4_ece_VedioPlaylist/IntegratedCircuitTechnologiesVideo";
+import MoneyAndBankingVideos from "./pages/Sem4/ECE/Sem4_ece_VedioPlaylist/MoneyAndBankingVideo";
+import NetworkSynthesisFiltersVideos from "./pages/Sem4/ECE/Sem4_ece_VedioPlaylist/NetworkSynthesisAndAnalogFiltersVideo";
+
+// sem 4 it lecture notes pages import 
+import ComputerGraphicsNotes from "./pages/Sem4/IT/Sem4_it_LectureNotes/ComputerGraphicsAndVisulizationLectureNotes";
+import ComputerNetworksNotes from "./pages/Sem4/IT/Sem4_it_LectureNotes/ComputerNetworksLectureNotes";
+import DBMSNotes from "./pages/Sem4/IT/Sem4_it_LectureNotes/DatabaseManagementSystemLectureNotes";
+import DaaNotes from "./pages/Sem4/IT/Sem4_it_LectureNotes/DesignAndAnalysisOfAlgorithmsLectureNotes";
+import PrinciplesOfProgrammingNotes from "./pages/Sem4/IT/Sem4_it_LectureNotes/PrinciplesOfProgrammingLanguageLectureNotes";
+
+// sem 4 it previous year pages import
+
+import ComputerGraphicsPapers from "./pages/Sem4/IT/Sem4_it_PreviousYearPapers/ComputerGraphicsAndVisulizationPapers";
+import ComputerNetworksPapers from "./pages/Sem4/IT/Sem4_it_PreviousYearPapers/ComputerNetworksPapers";
+import DBMSPapers from "./pages/Sem4/IT/Sem4_it_PreviousYearPapers/DatabaseMangementSystemPapers";
+import DaaPapers from "./pages/Sem4/IT/Sem4_it_PreviousYearPapers/DesignAndAnalysisOfAlgorithmsPapers";
+import PrinciplesOfProgrammingPapers from "./pages/Sem4/IT/Sem4_it_PreviousYearPapers/PrinciplesOfProgrammingLanguagePapers";
+
+
+import CGVideos from "./pages/Sem4/IT/Sem4_it_VedioPlaylist/ComputerGraphicsAndVisulizationVideo";
+import CNVideos from "./pages/Sem4/IT/Sem4_it_VedioPlaylist/ComputerNetworkVideo";
+import DBMSVideos from "./pages/Sem4/IT/Sem4_it_VedioPlaylist/DatabaseManagementSystemVideo";
+import DSAVideos from "./pages/Sem4/IT/Sem4_it_VedioPlaylist/DesignAndAnalysisOfAlgorithmsVideo";
+import MoneyBankingVideos from "./pages/Sem4/IT/Sem4_it_VedioPlaylist/MoneyAndBankingVideo";
+import POPVideos from "./pages/Sem4/IT/Sem4_it_VedioPlaylist/PrinciplesOfProgrammingLanguageVideo";
+
+// sem 4 it bi lecture note pages import 
+
+import DigitalMarketingNotes from "./pages/Sem4/IT_BI/Sem4_itbi_LectureNotes/DigitalMarketingLectureNotes";
+import ORNotes from "./pages/Sem4/IT_BI/Sem4_itbi_LectureNotes/OperationResearchLectureNotes";
+
+// sem 4 it bi previous year papers
+
+import DigitalMarketingPapers from "./pages/Sem4/IT_BI/Sem4_itbi_PreviousYearPapers/DigitalMarketingPapers";
+import ORPapers from "./pages/Sem4/IT_BI/Sem4_itbi_PreviousYearPapers/OperationResearchPapers";
+
+// sem 4 it bi video pages import
+
+import DigitalMarketingVideo from "./pages/Sem4/IT_BI/Sem4_itbi_VedioPlaylist/DigitalMarketingVideo"
+import ORVideo from "./pages/Sem4/IT_BI/Sem4_itbi_VedioPlaylist/OperationReasearchVideo"
+
+
+
+
 import AdminLoginPage from './pages/AdminLoginPage';
 import OTPVerification from './pages/OTPVerification';
 import CreateAdmin from './pages/CreateAdmin';
@@ -2007,6 +2096,16 @@ function AppContent() {
         <Route path="/sem2/physical-education" element={<PhysicalEducation />} />
         <Route path="/sem2/essential-of-business-informatic" element={< EssentialOfBusinessInformaticsVideo />} />
 
+         {/* sem 4 ece video routing */}
+        <Route path="/sem4/ece/analog-communication-videos" element={<AnalogCommunicationVideos />} />
+        <Route path="/sem4/ece/antenna-wave-propagation-videos" element={<AntennaWavePropagationVideos />} />
+        <Route path="/sem4/ece/cmos-vlsi-design-videos" element={<CMOSVLSIDesignVideos />} />
+        <Route path="/sem4/ece/control-system-videos" element={<ControlSystemVideos />} />
+        <Route path="/sem4/ece/integrated-circuit-tech-videos" element={<IntegratedCircuitTechVideos />} />
+        <Route path="/sem4/ece/money-and-banking-videos" element={<MoneyAndBankingVideos/>} />
+        <Route path="/sem4/ece/network-synthesis-filters-videos" element={<NetworkSynthesisFiltersVideos />} />
+
+
         {/* sem 3 ece video routing */}
         <Route path="/sem3/ece/analog-electronics-videos" element={<AnalogElectronicsVideos />} />
         <Route path="/sem3/ece/biology-engineers-videos" element={<BiologyEngineersVideos />} />
@@ -2049,6 +2148,287 @@ function AppContent() {
         <Route path="/sem3/itbi/foundation-fintech-videos" element={<FoundationFintechVideos />} />
         <Route path="/sem3/itbi/indian-economics-videos" element={<IndianEconomicsVideos />} />
         <Route path="/sem3/itbi/prayas-videos" element={<PrayasVideos />} />
+
+         {/* sem 4 it  video routing */}
+
+        <Route path="/sem4/it/computer-graphics-visualization-videos" element={<CGVideos />} />
+        <Route path="/sem4/it/computer-networks-videos" element={<CNVideos />} />
+        <Route path="/sem4/it/database-management-system-videos" element={< DBMSVideos />} />
+        <Route path="/sem4/it/design-analysis-algorithms-videos" element={<DSAVideos  />} />
+        <Route path="/sem4/it/money-and-banking-videos" element={<MoneyBankingVideos />} />
+        <Route path="/sem4/it/principles-of-programming-videos" element={<POPVideos />} />
+
+
+         {/* sem 4 it bi  video routing */}
+
+        <Route path="/sem4/itbi/digital-marketing-videos" element={<DigitalMarketingVideo />} />
+        <Route path="/sem4/itbi/computer-networks-videos" element={<CNVideos />} />
+        <Route path="/sem4/itbi/database-management-system-videos" element={< DBMSVideos />} />
+        <Route path="/sem4/itbi/design-analysis-algorithms-videos" element={<DSAVideos  />} />
+        <Route path="/sem4/itbi/money-and-banking-videos" element={<MoneyBankingVideos />} />
+        <Route path="/sem4/itbi/operation-research-videos" element={<ORVideo />} />
+
+
+        {/* sem 4 it bi video routing  */}
+
+
+
+            {/* Semester 4 it Previous Year Papers pages routing  */}
+
+        <Route
+          path="/sem4/it/computer-graphics-visualization-papers"
+          element={
+            <div className="w-screen bg-black min-h-screen">
+              <ComputerGraphicsPapers />
+            </div>
+          }
+        />
+        <Route
+          path="/sem4/it/computer-networks-papers"
+          element={
+            <div className="w-screen bg-black min-h-screen">
+              <ComputerNetworksPapers />
+            </div>
+          }
+        />
+        <Route
+          path="/sem4/it/database-management-system-papers"
+          element={
+            <div className="w-screen bg-black min-h-screen">
+              <DBMSPapers  />
+            </div>
+          }
+        />
+        <Route
+          path="/sem4/it/design-analysis-algorithms-papers"
+          element={
+            <div className="w-screen bg-black min-h-screen">
+              <DaaPapers />
+            </div>
+          }
+        />
+        <Route
+          path="/sem4/it/principles-of-programming-papers"
+          element={
+            <div className="w-screen bg-black min-h-screen">
+              <PrinciplesOfProgrammingPapers />
+            </div>
+          }
+        />
+        <Route
+          path="/sem4/it/money-and-banking-papers"
+          element={
+            <div className="w-screen bg-black min-h-screen">
+              <MoneyAndBankingPapers/>
+            </div>
+          }
+        />
+
+
+
+           {/* Semester 4 it bi lecture notes pages routing  */}
+
+        <Route
+          path="/sem4/itbi/digital-marketing-visualization-notes"
+          element={
+            <div className="w-screen bg-black min-h-screen">
+              <DigitalMarketingNotes/>
+            </div>
+          }
+        />
+        <Route
+          path="/sem4/itbi/computer-networks-notes"
+          element={
+            <div className="w-screen bg-black min-h-screen">
+              <ComputerNetworksNotes />
+            </div>
+          }
+        />
+        <Route
+          path="/sem4/itbi/database-management-system-notes"
+          element={
+            <div className="w-screen bg-black min-h-screen">
+              <DBMSNotes  />
+            </div>
+          }
+        />
+        <Route
+          path="/sem4/itbi/design-analysis-algorithms-notes"
+          element={
+            <div className="w-screen bg-black min-h-screen">
+              <DaaNotes />
+            </div>
+          }
+        />
+        <Route
+          path="/sem4/itbi/operation-reasearch-notes"
+          element={
+            <div className="w-screen bg-black min-h-screen">
+              <ORNotes />
+            </div>
+          }
+        />
+        <Route
+          path="/sem4/itbi/money-and-banking-notes"
+          element={
+            <div className="w-screen bg-black min-h-screen">
+              <MoneyAndBankingNotes/>
+            </div>
+          }
+        />
+       
+
+
+
+
+              {/* Semester 4 it bi Previous Year Papers pages routing  */}
+
+        <Route
+          path="/sem4/itbi/digital-marketing-papers"
+          element={
+            <div className="w-screen bg-black min-h-screen">
+              <DigitalMarketingPapers />
+            </div>
+          }
+        />
+        <Route
+          path="/sem4/itbi/computer-networks-papers"
+          element={
+            <div className="w-screen bg-black min-h-screen">
+              <ComputerNetworksPapers />
+            </div>
+          }
+        />
+        <Route
+          path="/sem4/itbi/database-management-system-papers"
+          element={
+            <div className="w-screen bg-black min-h-screen">
+              <DBMSPapers  />
+            </div>
+          }
+        />
+        <Route
+          path="/sem4/itbi/design-analysis-algorithms-papers"
+          element={
+            <div className="w-screen bg-black min-h-screen">
+              <DaaPapers />
+            </div>
+          }
+        />
+        <Route
+          path="/sem4/itbi/operation-research-papers"
+          element={
+            <div className="w-screen bg-black min-h-screen">
+              <ORPapers/>
+            </div>
+          }
+        />
+        <Route
+          path="/sem4/itbi/money-and-banking-papers"
+          element={
+            <div className="w-screen bg-black min-h-screen">
+              <MoneyAndBankingPapers/>
+            </div>
+          }
+        />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          {/* Semester 4 it lecture notes pages routing  */}
+
+        <Route
+          path="/sem4/it/computer-graphics-visualization-notes"
+          element={
+            <div className="w-screen bg-black min-h-screen">
+              <ComputerGraphicsNotes />
+            </div>
+          }
+        />
+        <Route
+          path="/sem4/it/computer-networks-notes"
+          element={
+            <div className="w-screen bg-black min-h-screen">
+              <ComputerNetworksNotes />
+            </div>
+          }
+        />
+        <Route
+          path="/sem4/it/database-management-system-notes"
+          element={
+            <div className="w-screen bg-black min-h-screen">
+              <DBMSNotes  />
+            </div>
+          }
+        />
+        <Route
+          path="/sem4/it/design-analysis-algorithms-notes"
+          element={
+            <div className="w-screen bg-black min-h-screen">
+              <DaaNotes />
+            </div>
+          }
+        />
+        <Route
+          path="/sem4/it/principles-of-programming-notes"
+          element={
+            <div className="w-screen bg-black min-h-screen">
+              <PrinciplesOfProgrammingNotes />
+            </div>
+          }
+        />
+        <Route
+          path="/sem4/it/money-and-banking-notes"
+          element={
+            <div className="w-screen bg-black min-h-screen">
+              <MoneyAndBankingNotes/>
+            </div>
+          }
+        />
+       
+
+
+
+
+
+
+
+
 
         {/* Semester 2 ECe page of lecture notes routing  */}
         <Route
@@ -2112,6 +2492,124 @@ function AppContent() {
           element={
             <div className="w-screen bg-black min-h-screen">
               <PrinciplesManagementNotes />
+            </div>
+          }
+        />
+        
+          {/* Semester 4 ece  lecture notes pages routing  */}
+          
+        <Route
+          path="/sem4/ece/analog-communication-notes"
+          element={
+            <div className="w-screen bg-black min-h-screen">
+              <AnalogCommunicationNotes />
+            </div>
+          }
+        />
+        <Route
+          path="/sem4/ece/antenna-wave-propagation-notes"
+          element={
+            <div className="w-screen bg-black min-h-screen">
+              <AntennaWavePropagationNotes />
+            </div>
+          }
+        />
+        <Route
+          path="/sem4/ece/cmos-vlsi-design-notes"
+          element={
+            <div className="w-screen bg-black min-h-screen">
+              <CMOSVLSIDesignNotes />
+            </div>
+          }
+        />
+        <Route
+          path="/sem4/ece/control-system-notes"
+          element={
+            <div className="w-screen bg-black min-h-screen">
+              <ControlSystemNotes />
+            </div>
+          }
+        />
+        <Route
+          path="/sem4/ece/integrated-circuit-tech-notes"
+          element={
+            <div className="w-screen bg-black min-h-screen">
+              <IntegratedCircuitTechNotes />
+            </div>
+          }
+        />
+        <Route
+          path="/sem4/ece/network-synthesis-filters-notes"
+          element={
+            <div className="w-screen bg-black min-h-screen">
+              <NetworkSynthesisFiltersNotes />
+            </div>
+          }
+        />
+         <Route
+          path="/sem4/ece/money-and-banking-notes"
+          element={
+            <div className="w-screen bg-black min-h-screen">
+              <MoneyAndBankingNotes />
+            </div>
+          }
+        />
+       
+          {/* sem 4 ece previous year  papers pages routing  */}
+
+       <Route
+          path="/sem4/ece/analog-communication-papers"
+          element={
+            <div className="w-screen bg-black min-h-screen">
+              <AnalogCommunicationPapers />
+            </div>
+          }
+        />
+        <Route
+          path="/sem4/ece/antenna-wave-propagation-papers"
+          element={
+            <div className="w-screen bg-black min-h-screen">
+              <AntennaWavePropagationPapers />
+            </div>
+          }
+        />
+        <Route
+          path="/sem4/ece/cmos-vlsi-design-papers"
+          element={
+            <div className="w-screen bg-black min-h-screen">
+              <CMOSVLSIDesignPapers />
+            </div>
+          }
+        />
+        <Route
+          path="/sem4/ece/control-system-papers"
+          element={
+            <div className="w-screen bg-black min-h-screen">
+              <ControlSystemPapers />
+            </div>
+          }
+        />
+        <Route
+          path="/sem4/ece/integrated-circuit-tech-papers"
+          element={
+            <div className="w-screen bg-black min-h-screen">
+              <IntegratedCircuitTechPapers />
+            </div>
+          }
+        />
+        <Route
+          path="/sem4/ece/network-synthesis-filters-papers"
+          element={
+            <div className="w-screen bg-black min-h-screen">
+              <NetworkSynthesisFiltersPapers />
+            </div>
+          }
+        />
+         <Route
+          path="/sem4/ece/money-and-banking-papers"
+          element={
+            <div className="w-screen bg-black min-h-screen">
+              <MoneyAndBankingPapers />
             </div>
           }
         />
@@ -2335,16 +2833,6 @@ function AppContent() {
             </div>
           }
         />
-
-
-
-
-
-
-
-
-
-
         <Route
           path="/sem2/web-development-notes"
           element={
@@ -2815,6 +3303,31 @@ function AppContent() {
         <Route path="/sem3/itbi/vedioplaylist" element={<Sem3_itbi_VedioPlaylist />} />
         <Route path="/sem3/itbi/lecturenotes" element={<Sem3_itbi_LectureNotes />} />
         <Route path="/sem3/itbi/previouspapers" element={<Sem3_itbi_PreviousPapers />} />
+
+
+         {/* Sem4 Routes */}
+        <Route path="/sem4_home" element={<Sem4_HomePage />} />
+
+
+        {/* Sem4 Department Routes */}
+        <Route path="/sem4/it" element={<Sem4_IT_HomePage />} />
+        <Route path="/sem4/itbi" element={<Sem4_ITBI_HomePage />} />
+        <Route path="/sem4/ece" element={<Sem4_ECE_HomePage />} />
+
+        {/* Sem4 ECE Video, Lecture Notes and Previous Year Papers Routes */}
+        <Route path="/sem4/ece/vedioplaylist" element={<Sem4_ece_VedioPlaylist />} />
+        <Route path="/sem4/ece/lecturenotes" element={<Sem4_ece_LectureNotes />} />
+        <Route path="/sem4/ece/previouspapers" element={<Sem4_ece_PreviousPapers />} />
+
+        {/* Sem4 IT Video, Lecture Notes and Previous Year Papers Routes */}
+        <Route path="/sem4/it/vedioplaylist" element={<Sem4_it_VedioPlaylist />} />
+        <Route path="/sem4/it/lecturenotes" element={<Sem4_it_LectureNotes />} />
+        <Route path="/sem4/it/previouspapers" element={<Sem4_it_PreviousPapers />} />
+
+        {/* Sem4 IT-BI Video, Lecture Notes and Previous Year Papers Routes */}
+        <Route path="/sem4/itbi/vedioplaylist" element={<Sem4_itbi_VedioPlaylist />} />
+        <Route path="/sem4/itbi/lecturenotes" element={<Sem4_itbi_LectureNotes />} />
+         <Route path="/sem4/itbi/previouspapers" element={<Sem4_itbi_PreviousPapers />} />     
 
 
         {/* Sem2 ECE Video, Lecture Notes and Previous Year Papers Routes */}

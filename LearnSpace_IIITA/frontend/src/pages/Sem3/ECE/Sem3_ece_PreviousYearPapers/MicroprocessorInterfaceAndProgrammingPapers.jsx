@@ -66,7 +66,7 @@ const  MicroprocessorInterfaceAndProgrammingPapersPage = () => {
     const fetchPapers = async () => {
       try {
         const semester = "Semester 3";
-        const subject = "Microprocessor Interface And Programming";
+        const subject = "MicroProcessor Interface And Programming";
 
         const yearsRef = collection(db, "semesters", semester, "years");
         const yearsSnapshot = await getDocs(yearsRef);

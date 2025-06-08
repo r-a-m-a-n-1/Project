@@ -127,7 +127,7 @@ const  OperationResearchPapersPage = () => {
     <div className="bg-gradient-to-br from-gray-900 via-black to-gray-900 text-white min-h-screen">
       <div className="sticky top-0 z-50 w-full bg-black bg-opacity-90 backdrop-blur-sm py-4">
         <h1 className="text-3xl font-bold text-center">
-         Operation Research Papers Page
+         Operation Research Papers 
         </h1>
       </div>
 

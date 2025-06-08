@@ -102,7 +102,7 @@ const semesterSubjects = {
       "Computer Graphics And Visulization",
       "Computer Network",
       "Database Management System",
-      "Desing And Analysis Of Algorithm",
+      "Design And Analysis Of Algorithm",
       "Money And Banking",
       "Principles Of Programming Language"
     ],

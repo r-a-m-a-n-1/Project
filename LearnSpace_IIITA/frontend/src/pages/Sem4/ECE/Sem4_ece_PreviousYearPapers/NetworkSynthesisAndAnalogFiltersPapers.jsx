@@ -66,7 +66,7 @@ const  NetworkSynthesisPapersPage = () => {
     const fetchPapers = async () => {
       try {
         const semester = "Semester 4";
-        const subject = "Network Synthesis";
+        const subject = "Network Synthesis And Analog Filters";
 
         const yearsRef = collection(db, "semesters", semester, "years");
         const yearsSnapshot = await getDocs(yearsRef);
@@ -127,7 +127,7 @@ const  NetworkSynthesisPapersPage = () => {
     <div className="bg-gradient-to-br from-gray-900 via-black to-gray-900 text-white min-h-screen">
       <div className="sticky top-0 z-50 w-full bg-black bg-opacity-90 backdrop-blur-sm py-4">
         <h1 className="text-3xl font-bold text-center">
-         Network Synthesis Papers
+         Network Synthesis And Analog Filters Papers
         </h1>
       </div>
 

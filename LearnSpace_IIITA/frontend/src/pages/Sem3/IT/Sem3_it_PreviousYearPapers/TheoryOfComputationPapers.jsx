@@ -66,7 +66,7 @@ const  TheoryOfComputationPapersPage = () => {
     const fetchPapers = async () => {
       try {
         const semester = "Semester 3";
-        const subject = "Theory Of Computation";
+        const subject = "Theory of Computation";
 
         const yearsRef = collection(db, "semesters", semester, "years");
         const yearsSnapshot = await getDocs(yearsRef);

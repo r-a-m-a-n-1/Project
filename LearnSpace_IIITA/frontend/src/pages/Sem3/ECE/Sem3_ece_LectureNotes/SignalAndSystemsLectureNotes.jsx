@@ -59,7 +59,7 @@ const SignalAndSystemsLectureNotes = () => {
     const fetchNotes = async () => {
       try {
         const semester = "Semester 3";
-        const subject = "Signal And Systems";
+        const subject = "Signal And System";
 
         const yearsRef = collection(db, "semesters", semester, "years");
         const yearsSnapshot = await getDocs(yearsRef);

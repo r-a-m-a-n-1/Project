@@ -58,7 +58,7 @@ const IntroductionToFinanceLectureNotes = () => {
   useEffect(() => {
     const fetchNotes = async () => {
       try {
-        const semester = "Semester 2";
+        const semester = "Semester 3";
         const subject = "Introduction To Finance";
 
         const yearsRef = collection(db, "semesters", semester, "years");

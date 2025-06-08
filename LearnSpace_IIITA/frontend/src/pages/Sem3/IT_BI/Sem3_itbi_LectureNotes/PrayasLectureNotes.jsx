@@ -59,7 +59,7 @@ const PrayasLectureNotes = () => {
     const fetchNotes = async () => {
       try {
         const semester = "Semester 3";
-        const subject = "Prayas Lecture Notes";
+        const subject = "Prayas";
 
         const yearsRef = collection(db, "semesters", semester, "years");
         const yearsSnapshot = await getDocs(yearsRef);

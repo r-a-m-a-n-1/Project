@@ -58,7 +58,7 @@ const BiologyForEngineersLectureNotes = () => {
   useEffect(() => {
     const fetchNotes = async () => {
       try {
-        const semester = "Semester 2";
+        const semester = "Semester 3";
         const subject = "Biology For Engineers";
 
         const yearsRef = collection(db, "semesters", semester, "years");

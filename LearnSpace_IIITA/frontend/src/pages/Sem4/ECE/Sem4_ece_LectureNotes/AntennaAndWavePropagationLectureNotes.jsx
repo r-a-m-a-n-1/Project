@@ -59,7 +59,7 @@ const AntennaAndWavePropagationLectureNotes = () => {
     const fetchNotes = async () => {
       try {
         const semester = "Semester 4";
-        const subject = "Antenna And Wave Propagation";
+        const subject = "Antenna And Waves Propagation";
 
         const yearsRef = collection(db, "semesters", semester, "years");
         const yearsSnapshot = await getDocs(yearsRef);

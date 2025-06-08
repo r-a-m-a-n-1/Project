@@ -66,7 +66,7 @@ const  ComputerNetworksPapersPage = () => {
     const fetchPapers = async () => {
       try {
         const semester = "Semester 4";
-        const subject = "Computer Networks";
+        const subject = "Computer Network";
 
         const yearsRef = collection(db, "semesters", semester, "years");
         const yearsSnapshot = await getDocs(yearsRef);

@@ -59,7 +59,7 @@ const PrinciplesOfProgrammingLectureNotes = () => {
     const fetchNotes = async () => {
       try {
         const semester = "Semester 4";
-        const subject = "Principles Of Programming";
+        const subject = "Principles Of Programming Language";
 
         const yearsRef = collection(db, "semesters", semester, "years");
         const yearsSnapshot = await getDocs(yearsRef);

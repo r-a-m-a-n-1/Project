@@ -58,7 +58,7 @@ const ElectromagneticFieldAndWavesLectureNotes = () => {
   useEffect(() => {
     const fetchNotes = async () => {
       try {
-        const semester = "Semester 2";
+        const semester = "Semester 3";
         const subject = "Electromagnetic Field And Waves";
 
         const yearsRef = collection(db, "semesters", semester, "years");

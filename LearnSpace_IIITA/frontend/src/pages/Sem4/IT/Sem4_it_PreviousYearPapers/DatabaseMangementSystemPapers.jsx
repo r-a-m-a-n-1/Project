@@ -66,7 +66,7 @@ const  DatabaseMangementSystemPapersPage = () => {
     const fetchPapers = async () => {
       try {
         const semester = "Semester 4";
-        const subject = "Database Mangement System";
+        const subject = "Database Management System";
 
         const yearsRef = collection(db, "semesters", semester, "years");
         const yearsSnapshot = await getDocs(yearsRef);
