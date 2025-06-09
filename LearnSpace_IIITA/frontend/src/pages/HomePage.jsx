@@ -56,7 +56,7 @@ function HomePage() {
         <div className="relative z-10 text-center px-4">
           <div className="text-6xl font-bold mb-12">
             <span className="bg-gradient-to-r from-[#ff6347] via-[#1e90ff] to-[#32cd32] bg-clip-text text-transparent animate-pulse">
-              Welcome to IIIT Learn Space
+              Welcome to IIIT-A Learn Space
             </span>
           </div>
         </div>
